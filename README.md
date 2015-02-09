@@ -1,7 +1,7 @@
-# Introduction to Theft Market
+# Real Time Weather Anamoly Detector
 ============
 
-*Documentation is a work in progress*
+*The documentation of the project is a continuing process*
 
 Table of Contents:
 
