@@ -18,16 +18,16 @@ The project aims to build a real-time weather anomaly detector using streaming d
 ![alt text](Images/Global_coverage.png "Locations of global monitoring stations ")
 
 
-## 2. REST API
 
 
-## 3. Operation
+
+## 2. Operation
 
 
-## 4. Install
+## 3. Install
 
 See the [install directions](INSTALL.md) for installation instructions
 
-## 5. Schema and Code Sample
+## 4. Schema and Code Sample
 
 See the [schema descriptions and code samples](SCHEMA.md) for description on the schemas and example code snippets.
