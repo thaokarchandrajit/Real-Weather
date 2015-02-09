@@ -13,9 +13,9 @@ Table of Contents:
 
 ## 1. Introduction
 
-The project aims to build a real-time weather anomaly detector using streaming data from NOAA weather sensor network. More visibility into and organization of historical real estate listing data.  I leverage Trulia's API to gather their historic data.  See Trulia's [developer page](http://developer.trulia.com/docs/read/Home) for an overview of their API.
+The project aims to build a real-time weather anomaly detector using streaming data from NOAA weather sensor network. 
 
-![alt text](Images/Global_coverage.png "High level overview of Theft Market")
+![alt text](Images/Global_coverage.png "Locations of global monitoring stations ")
 
 
 ## 2. REST API
