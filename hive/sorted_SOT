@@ -1,0 +1,9 @@
+CREATE TABLE sorted_sot AS
+
+			SELECT 	
+				*
+			FROM 	
+				source_of_truth
+	
+			ORDER BY
+				year,month,day;

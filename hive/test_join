@@ -1,0 +1,12 @@
+CREATE TABLE test_join AS
+
+			SELECT 		test_weather_data_global.*,
+					location_data_global.lat,
+					location_data_global.long,
+					location_data_global.elev
+			FROM 	
+				test_weather_data_global
+			JOIN
+				location_data_global
+			ON
+				(test_weather_data_global.uid = location_data_global.uid);
