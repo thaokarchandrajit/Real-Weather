@@ -1,0 +1,10 @@
+CREATE TABLE csv_sorted_sot AS
+
+			SELECT 	
+				*
+			FROM 	
+				sorted_sot
+	
+			
+			ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
+			STORED AS ;
