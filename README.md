@@ -7,7 +7,7 @@ Real Time Weather Anomaly Detector
 Table of Contents:
 
 1. [Motivation](README.md#1-motivation)
-2. [REST API](README.md#2-rest-api)
+2. [Data Pipeline](README.md#2-data-pipline)
 3. [Operation](README.md#3-operation) 
 4. [Install](README.md#4-instal)
 5. [Schema and code samples](README.md#5-schema-and-code-sample)
@@ -27,9 +27,6 @@ The motivation behind developing the proof-of-concept pipeline can be summerized
 3. Provide a way to incorporate incoming real-time data streams into the historical weather data. This solution can be can be very useful for data scientists and climatologists to test climate models. The ease of querying such a large and rich data set can result in shorter testing times for a particular model and faster iterating through the models.
 
 4. In light of increasing weather disturbances caused by global climate change, the project aims to provide  the local governments with an API which can be used to asses and project the impact of weather anomalies. 
-
-
-
 
 
 
