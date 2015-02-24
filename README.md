@@ -49,7 +49,7 @@ One of the kafka consumer uploads all the incoming data into a HDFS cluster. The
 ![](Images/Batch1.png "Comparion between average monthly highs and lows for 1973 - 2009")
 
 ![](Images/Batch2.png "Lowest temperature of all the sensors for every year for 1973 -2009")
-See the [inall directions](INSTALL.md) for installation instructnions
+
 
 ## 5. Speed Layer
 
@@ -57,11 +57,11 @@ The Speed layer (real-time) layer is implemented using [Apache Storm](https://st
 
 ##6. Serving Layer
 
-The serving layer consists of [Apache Hbase](https://hbase.apache.org/), which is a key-value store. Hbase is a distributed, scalable datastore which integrates really well with the Hadoop eco-system. The views created by Hive in the batch layer and by Storm are integrated together in HBase. 
+The serving layer consists of [Apache HBase](https://hbase.apache.org/), which is a key-value store. Hbase is a distributed, scalable datastore which integrates really well with the Hadoop eco-system. The views created by Hive in the batch layer and by Storm are integrated together in HBase. 
 
 The webUI consists of a [Flask](http://flask.pocoo.org/) server. [Bootstrap](http://getbootstrap.com/) is used to create a framework for the UI. The locations of the anomalies are plotted in real-time using the google Maps API
 
-### The demo of the pipeline can be accessed at [www.realweather.org](http://realweather.org/).
+ *The demo of the pipeline can be accessed at [www.realweather.org](http://realweather.org/).*
 
+*In case the website goes down, a video of the demo can be found [here](https://www.youtube.com/watch?v=b182WeSFpN8).*
 
-See the [schema descriptions and code samples](SCHEMA.md) for description on the schemas and example code snippets.
