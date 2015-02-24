@@ -30,7 +30,7 @@ The motivation behind developing the proof-of-concept pipeline can be summerized
 
 
 
-## 2. Operation
+## 2. Data Pipeline
 
 
 ## 3. Install
