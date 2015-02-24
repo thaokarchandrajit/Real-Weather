@@ -6,13 +6,13 @@ Real Time Weather Anomaly Detector
 
 Table of Contents:
 
-A. Motivation
-B. Data Pipeline
-C. Operation 
-D. Install
-E. Schema and code samples
+1. Motivation
+2. Data Pipeline
+3. Operation 
+4. Install
+5. Schema and code samples
 
-## A. Motivation
+## 1. Motivation
 
 The National Oceanic Atmospheric Agency [(NOAA)](http://www.noaa.gov/) tracks global weather using a network of about 12000 - 15000 sensors distributed globally. Global weather is one of the most dynamic systems in existance on the planet. The effect of disruptions caused by weather anomalies have far reaching consequences on all aspects human civilization. The impact of weather disruptions can be felt on global econmoy, food production, loss of life and global transport network etc.
 
@@ -30,13 +30,20 @@ The motivation behind developing the proof-of-concept pipeline can be summerized
 
 
 
-## B. Data Pipeline
+## 2. Data Pipeline
 
-![](Images/pipeline.png "The data pipeline deployed ")
+![](Images/Pipeline.png "The data pipeline deployed ")
 
-## 3. Install
+The data pipeline employed utilizes [Lambda Architecture](https://en.wikipedia.org/wiki/Lambda_architecture). The entire architecture is deployed in Amazon cloud services.
 
-See the [inall directions](INSTALL.md) for installation instructions
+## 3. Data download
+
+The data is downloaded from a public dataset hosted on a [Amazon S3 bucket](https://aws.amazon.com/datasets/2759).
+
+
+## 4. Data ingestion
+
+See the [inall directions](INSTALL.md) for installation instructnions
 
 ## 4. Schema and Code Sample
 
