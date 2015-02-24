@@ -46,7 +46,9 @@ Once the data is downloaded, it is stored locally on one of the cluster nodes. I
 
 One of the kafka consumer uploads all the incoming data into a HDFS cluster. The HDFS cluster serves as the source of truth and permanent storage. Batch processing of data is accomplished using [Apache Hive](https://hive.apache.org/). Hive provides a SQL-like interface for launching map reduce jobs for querying the entire dataset. The views generated from querying the entire data set are forwarded to the serving layer. The images below give two examples of the sort of data aggregation possible using Hive.
 
+![](Images/Batch1.png "Comparion between average monthly highs and lows for 1973 - 2009")
 
+![](Images/Batch2.png "Lowest temperature of all the sensors for every year for 1973 -2009")
 See the [inall directions](INSTALL.md) for installation instructnions
 
 ## 4. Schema and Code Sample
