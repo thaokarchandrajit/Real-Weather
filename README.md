@@ -1,19 +1,20 @@
-# Real Time Weather Anomaly Detector
-============
+Real Time Weather Anomaly Detector
+==================================
+## A data pipeline to monitor global weather anomalies in real-time using the NOAA sensor network
 
 *The documentation of the project is a continuing process*
 
 Table of Contents:
 
-1. [Introduction](README.md#1-introduction)
+1. [Motivation](README.md#1-motivation)
 2. [REST API](README.md#2-rest-api)
 3. [Operation](README.md#3-operation) 
 4. [Install](README.md#4-instal)
 5. [Schema and code samples](README.md#5-schema-and-code-sample)
 
-## 1. Introduction
+## 1. Motivation
 
-The project aims to build a real-time weather anomaly detector using streaming data from NOAA weather sensor network. 
+T
 
 ![alt text](Images/Global_coverage.png "Locations of global monitoring stations ")
 
