@@ -7,7 +7,7 @@ Real Time Weather Anomaly Detector
 Table of Contents:
 
 1. [Motivation](README.md#1-motivation)
-2. [Data Pipeline](README.md#2-data-pipline)
+2. [Data Pipeline](README.md#2-data pipline)
 3. [Operation](README.md#3-operation) 
 4. [Install](README.md#4-instal)
 5. [Schema and code samples](README.md#5-schema-and-code-sample)
@@ -30,7 +30,7 @@ The motivation behind developing the proof-of-concept pipeline can be summerized
 
 
 
-## 2. Data Pipeline
+## B. Data Pipeline
 
 
 ## 3. Install
