@@ -6,7 +6,7 @@ Real Time Weather Anomaly Detector
 
 Table of Contents:
 
-1. [Motivation](README.md#1-motivation)
+1. [Motivation](README.md#A-motivation)
 2. [Data Pipeline](README.md#2-data pipline)
 3. [Operation](README.md#3-operation) 
 4. [Install](README.md#4-instal)
