@@ -11,6 +11,7 @@ Table of Contents:
 3. Data Download and Ingestion 
 4. Batch Layer
 5. Speed Layer
+6. Serving Layer
 
 ## 1. Motivation
 
