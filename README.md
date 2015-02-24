@@ -14,7 +14,7 @@ Table of Contents:
 
 ## 1. Motivation
 
-The National Oceanic Atmospheric Agency [(NOAA)](http://www.noaa.gov/) tracks global weather using a network of about 12000 - 15000 sensors distributed globally. Global weather is one of the most dynamic systems in existance on the planet. The effect of disruptions caused by weather anomalies have far reaching consequences on all aspects human civilization. The impact of weather disruptions can be felt on global econmoy, food production, loss of life and global transport network etc.
+The National Oceanic Atmospheric Agency [(NOAA)](http://www.noaa.gov/) tracks global weather using a network of about 12000 - 15000 sensors distributed globally. Global weather is one of the most dynamic systems in existance on the planet. The effect of disruptions caused by weather anomalies have far reaching consequences on all aspects human civilization. The impact of weather disruptions can be felt on global economy, food production, loss of life and global transport network etc.
 
 ![](Images/Global_coverage.png "Locations of global monitoring stations ")
 
@@ -24,7 +24,7 @@ The motivation behind developing the proof-of-concept pipeline can be summerized
 
 2. Provide a unified platform to integrate real-time data streams coming from a very large number of monitoring stations to simplify monitoring of weather anomalies.
 
-3. Provide a way to incorporate incoming real-time data streams into the historical weather data. This solution can be can be very useful for data scientists and climatologists to test climate models. The ease of querying such a large and rich data set can result in shorter testing times for a particular model and faster iterating through the models.
+3. Provide a way to incorporate incoming real-time data streams into the historical weather data. This solution can be can be very useful for data scientists and climatologists to test climate models. The ease of querying such a large and rich data set can result in shorter testing times for a particular model and ability to iterate faster through the candidate models.
 
 4. In light of increasing weather disturbances caused by global climate change, the project aims to provide  the local governments with an API which can be used to asses and project the impact of weather anomalies. 
 
@@ -34,14 +34,16 @@ The motivation behind developing the proof-of-concept pipeline can be summerized
 
 ![](Images/Pipeline.png "The data pipeline deployed ")
 
-The data pipeline employed utilizes [Lambda Architecture](https://en.wikipedia.org/wiki/Lambda_architecture). The entire architecture is deployed in Amazon cloud services.
+The data pipeline employed utilizes [Lambda Architecture](https://en.wikipedia.org/wiki/Lambda_architecture). The advantages of lambda architecture for large distributed, faults tolerant systems are well documented. The entire architecture is deployed in Amazon cloud services.
 
-## 3. Data download
+## 3. Data Download and Ingestion
 
 The data is downloaded from a public dataset hosted on a [Amazon S3 bucket](https://aws.amazon.com/datasets/2759).
 
+Once the data is downloaded, it is stored locally on one of the cluster nodes. In absence of access to current real-time streaming data, the historical data is replayed as a real-time stream. [Apache Kafka](https://kafka.apache.org/) is used as a message queuing system. Kafka is a distributed, robust and fault tolerant while at the same time being able to handle a very large volume of incoming messages. Kafka routes two different copies of the incoming stream into the batch layer and speed layer (real-time computation).
 
-## 4. Data ingestion
+## 4. Batch Layer
+
 
 See the [inall directions](INSTALL.md) for installation instructnions
 
