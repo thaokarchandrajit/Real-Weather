@@ -8,9 +8,9 @@ Table of Contents:
 
 1. Motivation
 2. Data Pipeline
-3. Operation 
-4. Install
-5. Schema and code samples
+3. Data Download and Ingestion 
+4. Batch Layer
+5. Speed Layer
 
 ## 1. Motivation
 
@@ -51,6 +51,17 @@ One of the kafka consumer uploads all the incoming data into a HDFS cluster. The
 ![](Images/Batch2.png "Lowest temperature of all the sensors for every year for 1973 -2009")
 See the [inall directions](INSTALL.md) for installation instructnions
 
-## 4. Schema and Code Sample
+## 5. Speed Layer
+
+The Speed layer (real-time) layer is implemented using [Apache Storm](https://storm.apache.org/). Storm provides distributed real-time, scalable computation framework for the establishing presence of weather anomaly at a particular weather station.
+
+##6. Serving Layer
+
+The serving layer consists of [Apache Hbase](https://hbase.apache.org/), which is a key-value store. Hbase is a distributed, scalable datastore which integrates really well with the Hadoop eco-system. The views created by Hive in the batch layer and by Storm are integrated together in HBase. 
+
+The webUI consists of a [Flask](http://flask.pocoo.org/) server. [Bootstrap](http://getbootstrap.com/) is used to create a framework for the UI. The locations of the anomalies are plotted in real-time using the google Maps API
+
+### The demo of the pipeline can be accessed at [www.realweather.org](http://realweather.org/).
+
 
 See the [schema descriptions and code samples](SCHEMA.md) for description on the schemas and example code snippets.
