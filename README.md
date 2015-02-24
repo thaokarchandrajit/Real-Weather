@@ -6,13 +6,13 @@ Real Time Weather Anomaly Detector
 
 Table of Contents:
 
-1. [Motivation](README.md#A-motivation)
+1. [Motivation](README.md#1-motivation)
 2. [Data Pipeline](README.md#2-data pipline)
 3. [Operation](README.md#3-operation) 
 4. [Install](README.md#4-instal)
 5. [Schema and code samples](README.md#5-schema-and-code-sample)
 
-## A. Motivation
+## 1. Motivation
 
 The National Oceanic Atmospheric Agency [(NOAA)](http://www.noaa.gov/) tracks global weather using a network of about 12000 - 15000 sensors distributed globally. Global weather is one of the most dynamic systems in existance on the planet. The effect of disruptions caused by weather anomalies have far reaching consequences on all aspects human civilization. The impact of weather disruptions can be felt on global econmoy, food production, loss of life and global transport network etc.
 
@@ -20,7 +20,7 @@ The National Oceanic Atmospheric Agency [(NOAA)](http://www.noaa.gov/) tracks gl
 
 The motivation behind developing the proof-of-concept pipeline can be summerized as follows:
 
-1. The project aims to provide a solution to track the location and occurances extreme weather events or anomalies in real-time. These  capabilities can be extremely useful for generating rapid response to the damage caused by weather anomalies. 
+a. The project aims to provide a solution to track the location and occurances extreme weather events or anomalies in real-time. These  capabilities can be extremely useful for generating rapid response to the damage caused by weather anomalies. 
 
 2. Provide a unified platform to integrate real-time data streams coming from a very large number of monitoring stations to simplify monitoring of weather anomalies.
 
