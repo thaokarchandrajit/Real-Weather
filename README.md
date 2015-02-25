@@ -64,5 +64,5 @@ The webUI consists of a [Flask](http://flask.pocoo.org/) server. [Bootstrap](htt
 
  *The demo of the pipeline can be accessed at [www.realweather.org](http://realweather.org/).*
 
-*In case the website goes down, a video of the demo can be found [here](https://www.youtube.com/watch?v=b182WeSFpN8).*
+*In case the website goes down, a video of the demo can be found [here](https://www.youtube.com/watch?v=p1RzCs6sHJI&feature=youtu.be).*
 
